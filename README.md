@@ -51,7 +51,7 @@ Finally, result evaluation is executed as well.
 
 10.- to evaluate results and compare them to MASPECTRAS ones run the main_results.m after cd-ing to the results folder (not needed if main.m is run)
 
-Please notice that in this implementation the following data feature was exploited: samples resolution is constant both along retention times (~1sec) and m/z (0.04Da).
+Please notice that in this implementation the following data feature was exploited: sample resolution is constant both along retention times (~1sec) and m/z (0.04Da).
 This allowed to exchange retention time (m/z) indexes and  their actual retention time (m/z) values. 
 Other data, without constant sampling rates, would need slight modifications to the current implementation. Next release will add this additional feature.
 
