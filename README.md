@@ -25,12 +25,12 @@ login as guest (pwd: guest). On the up left corner click on Menu and unfold the 
 
 add at the end of the classpath.txt file your local file paths to the needed jars, as in the example here below:
 
-/Users/saran/work/3DSpectra/jrap_StAX_v5.jar
-/Users/saran/work/3DSpectra/maspectras.jar
-/Users/saran/work/3DSpectra/massMatlab.jar
-/Users/saran/work/3DSpectra/mzRTree.jar
-/Users/saran/work/3DSpectra/igbbiojava.jar
-/Users/saran/work/3DSpectra/outliers.jar
+/Users/saran/work/3DSpectra/jrap_StAX_v5.jar<br/>
+/Users/saran/work/3DSpectra/maspectras.jar<br/>
+/Users/saran/work/3DSpectra/massMatlab.jar<br/>
+/Users/saran/work/3DSpectra/mzRTree.jar<br/>
+/Users/saran/work/3DSpectra/igbbiojava.jar<br/>
+/Users/saran/work/3DSpectra/outliers.jar<br/>
 
 3.- mex update on new hardware (hist2data) as follows: mex hist2data.c
 
