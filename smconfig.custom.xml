@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- smconfig.custom.empty.xml -->
+
+<!-- for comments, do not use two -'s in a row anywhere -->
+<!-- tab stops are set to 2 for easier editing -->
+
+<!-- This file can be used as a basis for creating your own 
+     smconfig.custom.xml file:
+		 1. copy this file to smconfig.custom.xml
+		 2. create definitions for modifications (<mod> elements)
+		    and homology search mode mappings (<homology>)
+
+ Definitions in smconfig.custom.xml will override any
+ definitions in smconfig.std.xml. Spectrum Mill automatically
+ combines the smconfig.custom.xml file and the smconfig.std.xml
+ file to produce the smconfig.xml that is used by the programs.
+
+ !! The smconfig.std.xml file should not be modified! !!
+
+ The smconfig.misc.xml file contains various modification 
+ definitions which may be copy and pasted into your
+ smconfig.custom.xml file. 
+
+ Please see the smconfig.custom.example.xml file for an
+ example of how a smconfig.custom.xml might look.
+
+ Note that the smconfig.custom.xml file will not be overwritten
+ during a re-install of Spectrum Mill.
+
+ Please see the Spectrum Mill Installation and Configuration 
+ guide for details.
+
+-->
+
+<!-- 
+		NOTE! If you make changes to this to smconfig.custom.xml, 
+		you should load it into IE in order to make sure there are 
+		no mistakes.
+-->
+
+<configurations>	
+
+<config id="default">
+
+	<elements>
+		<!-- customize <element> definitions here -->
+
+		<!-- Each element may contain multiple isotope's - place main isotope first	-->
+		<!-- Element symbols are restricted to a single character -->
+
+	</elements>	 
+
+	<!-- custom aminoAcid definitions are not permitted; use a modification instead -->
+
+	<modifications>
+		<!-- add new or redefine modifications (<mod> elements) here -->
+
+		<!-- NOTES: the site attributes which are the same as with AA's are optional, in which case they inherit the same as the amino acid -->
+		<!-- a type of "any" means the modifications may be "fixed" or "variable", while "cyclic" implies fixed -->
+			<!-- "variable" or "any" mods may be assigned a PMFScoring attibrute, which supports the following values:
+			"0" : do not score if match found
+			"1" : always score if match found
+			"2" : only score if unmodified match is also found
+			-->
+		<!-- markerIon notes: -->
+		<!-- the nominalMass attribute is just there for reference -	actual mass is calculated from the formula -->
+		<!-- if ionized=1 and pmni=0 then the formula must not include the proton - the cation weight will be added automatically -->
+		<!-- pmni stands for 'parentMinusNeutralIonized' -->
+		<!-- the formula for a markerIon must not include the proton (one less 'H' in the formula) -->
+	  <mod id="ICPL_light" name="ICPL_light"  formula="C6 N1 O1 H3" type="variable" PMFScoring="1" abbrev="ICPL-L" >
+			<site aa="K" />
+	  </mod>
+ 	  <mod id="ICPL_heavy" name="ICPL_heavy"  formula="c6 N1 O1 H3" type="variable" PMFScoring="1" abbrev="ICPL-H" >
+			<site aa="K" />
+	  </mod>
+	  <mod id="ICPL-mix" name="ICPL-mix" type="cyclic" >
+	    <site aa="K" />
+		<cycles>
+		   <cycle n="1"><cyclemod mod="ICPL_light"/></cycle>
+		   <cycle n="2"><cyclemod mod="ICPL_heavy"/></cycle>
+		</cycles>
+	   </mod>
+
+	</modifications>
+
+	<homology>
+		<!-- defines new homology substitution matrices (<mode> elements) -->
+	</homology>
+
+</config>
+</configurations>

@@ -1,0 +1,26 @@
+Sequence	Charge	(M/Z)H+	Delta	MassToSearch	ScanNumber
+
+ADLAKYICDNQDTISSK0000030000000000000	2	2046.9442259999998	0.721601	1024.3329	2694
+
+ADRDQYELLCLDNTR00000000000000000	3	1881.876477	-1000.0	627.95856	2620
+
+ALKAWSVAR00020000000	2	1112.631177	-0.038188	556.7965	2478
+
+ALKAWSVAR00030000000	2	1106.6110509999999	0.361697	553.9864	2776
+ALKAWSVAR00030000000	2	1106.6110509999999	0.361697	553.9864	2464
+
+
+and so on.
+This is just a tab delimited file where:
+
+Sequence	is the peptide sequence concatenated to length(pepSequence)+2 zeros, where 2 indicates a heavy tag and 3 the light one (only 0s means no labeling identified).
+
+Charge		is the peptide charge
+
+(M/Z)H+		is the mass-to-charge ration with unitary charge
+
+Delta		is the mass shift due to technical error (-1000, as in row 2 here, means no delta/estimate available)
+
+MassToSearch	is the actual mass to be searched in the data
+
+ScanNumber	is the MS1 scan number corresponding to the identification, if available, otherwise the MSn scan number (see main_library.m for further details)

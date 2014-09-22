@@ -1,0 +1,2830 @@
+%!PS-Adobe-2.0 
+%%Creator: MATLAB, The MathWorks, Inc. Version 7.12.0.635 (R2011a). Operating System: Microsoft Windows 7.
+%%Title: \\VBOXSVR\3DSpectra\results\without outliers\regressions_commons.ps
+%%CreationDate: 10/14/2012  16:53:46
+%%DocumentNeededFonts: Helvetica
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%Extensions: CMYK
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+
+%%BeginProlog
+% MathWorks dictionary
+/MathWorks 160 dict begin
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s {show newpath} bdef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+% orientation switch
+/portraitMode 0 def /landscapeMode 1 def /rotateMode 2 def
+% coordinate system mappings
+/dpi2point 0 def
+% font control
+/FontSize 0 def
+/FMS {/FontSize xstore findfont [FontSize 0 0 FontSize neg 0 0]
+  makefont setfont} bdef
+/ISOLatin1Encoding where {pop /WindowsLatin1Encoding 256 array bdef
+ISOLatin1Encoding WindowsLatin1Encoding copy pop
+/.notdef/.notdef/quotesinglbase/florin/quotedblbase/ellipsis/dagger
+/daggerdbl/circumflex/perthousand/Scaron/guilsinglleft/OE/.notdef/.notdef
+/.notdef/.notdef/quoteleft/quoteright/quotedblleft/quotedblright/bullet
+/endash/emdash/tilde/trademark/scaron/guilsinglright/oe/.notdef/.notdef
+/Ydieresis WindowsLatin1Encoding 128 32 getinterval astore pop}
+{/WindowsLatin1Encoding StandardEncoding bdef} ifelse
+/reencode {exch dup where {pop load} {pop StandardEncoding} ifelse
+  exch dup 3 1 roll findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def currentdict end definefont pop} bdef
+/isroman {findfont /CharStrings get /Agrave known} bdef
+/FMSR {3 1 roll 1 index dup isroman {reencode} {pop pop} ifelse
+  exch FMS} bdef
+/csm {1 dpi2point div -1 dpi2point div scale neg translate
+ dup landscapeMode eq {pop -90 rotate}
+  {rotateMode eq {90 rotate} if} ifelse} bdef
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4
+  dpi2point mul] 0 setdash } bdef
+% macros for lines and objects
+/L {lineto stroke} bdef
+/MP {3 1 roll moveto 1 sub {rlineto} repeat} bdef
+/AP {{rlineto} repeat} bdef
+/PDlw -1 def
+/W {/PDlw currentlinewidth def setlinewidth} def
+/PP {closepath eofill} bdef
+/DP {closepath stroke} bdef
+/MR {4 -2 roll moveto dup  0 exch rlineto exch 0 rlineto
+  neg 0 exch rlineto closepath} bdef
+/FR {MR stroke} bdef
+/PR {MR fill} bdef
+/L1i {{currentfile picstr readhexstring pop} image} bdef
+/tMatrix matrix def
+/MakeOval {newpath tMatrix currentmatrix pop translate scale
+0 0 1 0 360 arc tMatrix setmatrix} bdef
+/FO {MakeOval stroke} bdef
+/PO {MakeOval fill} bdef
+/PD {currentlinewidth 2 div 0 360 arc fill
+   PDlw -1 eq not {PDlw w /PDlw -1 def} if} def
+/FA {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arc tMatrix setmatrix stroke} bdef
+/PA {newpath tMatrix currentmatrix pop	translate 0 0 moveto scale
+  0 0 1 5 -2 roll arc closepath tMatrix setmatrix fill} bdef
+/FAn {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arcn tMatrix setmatrix stroke} bdef
+/PAn {newpath tMatrix currentmatrix pop translate 0 0 moveto scale
+  0 0 1 5 -2 roll arcn closepath tMatrix setmatrix fill} bdef
+/vradius 0 def /hradius 0 def /lry 0 def
+/lrx 0 def /uly 0 def /ulx 0 def /rad 0 def
+/MRR {/vradius xdef /hradius xdef /lry xdef /lrx xdef /uly xdef
+  /ulx xdef newpath tMatrix currentmatrix pop ulx hradius add uly
+  vradius add translate hradius vradius scale 0 0 1 180 270 arc 
+  tMatrix setmatrix lrx hradius sub uly vradius add translate
+  hradius vradius scale 0 0 1 270 360 arc tMatrix setmatrix
+  lrx hradius sub lry vradius sub translate hradius vradius scale
+  0 0 1 0 90 arc tMatrix setmatrix ulx hradius add lry vradius sub
+  translate hradius vradius scale 0 0 1 90 180 arc tMatrix setmatrix
+  closepath} bdef
+/FRR {MRR stroke } bdef
+/PRR {MRR fill } bdef
+/MlrRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lry uly sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 90 270 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 270 90 arc tMatrix setmatrix
+  closepath} bdef
+/FlrRR {MlrRR stroke } bdef
+/PlrRR {MlrRR fill } bdef
+/MtbRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lrx ulx sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 180 360 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 0 180 arc tMatrix setmatrix
+  closepath} bdef
+/FtbRR {MtbRR stroke } bdef
+/PtbRR {MtbRR fill } bdef
+/stri 6 array def /dtri 6 array def
+/smat 6 array def /dmat 6 array def
+/tmat1 6 array def /tmat2 6 array def /dif 3 array def
+/asub {/ind2 exch def /ind1 exch def dup dup
+  ind1 get exch ind2 get sub exch } bdef
+/tri_to_matrix {
+  2 0 asub 3 1 asub 4 0 asub 5 1 asub
+  dup 0 get exch 1 get 7 -1 roll astore } bdef
+/compute_transform {
+  dmat dtri tri_to_matrix tmat1 invertmatrix 
+  smat stri tri_to_matrix tmat2 concatmatrix } bdef
+/ds {stri astore pop} bdef
+/dt {dtri astore pop} bdef
+/db {2 copy /cols xdef /rows xdef mul dup 3 mul string
+  currentfile exch readhexstring pop
+  dup 0 3 index getinterval /rbmap xdef
+  dup 2 index dup getinterval /gbmap xdef
+  1 index dup 2 mul exch getinterval /bbmap xdef pop pop}bdef
+/it {gs np dtri aload pop moveto lineto lineto cp c
+  cols rows 8 compute_transform 
+  rbmap gbmap bbmap true 3 colorimage gr}bdef
+/il {newpath moveto lineto stroke}bdef
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:    57   199   548   594
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode 0204 7344 csm
+
+  480   208  5893  4746 MR c np
+85 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 1.000000 sc} bdef
+/c1 { 0.000000 0.000000 0.000000 0.000000 sc} bdef
+/c2 { 0.000000 0.900000 0.900000 0.100000 sc} bdef
+/c3 { 0.820000 0.000000 0.820000 0.180000 sc} bdef
+/c4 { 0.800000 0.800000 0.000000 0.200000 sc} bdef
+/c5 { 0.000000 0.090000 0.590000 0.090000 sc} bdef
+/c6 { 0.000000 0.740000 0.180000 0.000000 sc} bdef
+/c7 { 0.820000 0.000000 0.000000 0.180000 sc} bdef
+c0
+1 j
+c1
+   0    0 6913 5185 PR
+6 w
+0 1394 5356 0 0 -1394 899 2157 4 MP
+PP
+-5356 0 0 1394 5356 0 0 -1394 899 2157 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+ 899 2157 mt 6255 2157 L
+ 899 2157 mt  899  763 L
+ 899 2157 mt  899 2103 L
+%%IncludeResource: font Helvetica
+/Helvetica 120 FMS
+
+ 866 2302 mt 
+(0) s
+1434 2157 mt 1434 2103 L
+1351 2302 mt 
+(0.1) s
+1970 2157 mt 1970 2103 L
+1887 2302 mt 
+(0.2) s
+2505 2157 mt 2505 2103 L
+2422 2302 mt 
+(0.3) s
+3041 2157 mt 3041 2103 L
+2958 2302 mt 
+(0.4) s
+3577 2157 mt 3577 2103 L
+3494 2302 mt 
+(0.5) s
+4112 2157 mt 4112 2103 L
+4029 2302 mt 
+(0.6) s
+4648 2157 mt 4648 2103 L
+4565 2302 mt 
+(0.7) s
+5183 2157 mt 5183 2103 L
+5100 2302 mt 
+(0.8) s
+5719 2157 mt 5719 2103 L
+5636 2302 mt 
+(0.9) s
+6255 2157 mt 6255 2103 L
+6222 2302 mt 
+(1) s
+ 899 2157 mt  952 2157 L
+ 798 2201 mt 
+(0) s
+ 899 1793 mt  952 1793 L
+ 698 1837 mt 
+(0.2) s
+ 899 1430 mt  952 1430 L
+ 698 1474 mt 
+(0.4) s
+ 899 1067 mt  952 1067 L
+ 698 1111 mt 
+(0.6) s
+3292  392 mt 
+(Ratio: 1l1h) s
+2936  530 mt 
+(Maspectras: ASAPRatio) s
+3089  668 mt 
+(Common peptides) s
+gs 899 763 5357 1395 MR c np
+gr
+
+gs 850 690 5479 1531 MR c np
+/c8 { 1.000000 1.000000 0.000000 0.000000 sc} bdef
+c8
+  36   36 3814 1102 FO
+  36   36 3753 1255 FO
+  36   36 1326 2010 FO
+  36   36 3289 1289 FO
+  36   36 2721 1356 FO
+  36   36 1302 1952 FO
+  36   36 1252 1986 FO
+  36   36 1207 2006 FO
+  36   36 1911 1912 FO
+  36   36 2466 1801 FO
+  36   36 2359 1827 FO
+  36   36 1019 2116 FO
+  36   36 1124 2072 FO
+  36   36 1052 2096 FO
+  36   36 1058 2103 FO
+  36   36  985 2121 FO
+  36   36  984 2111 FO
+  36   36  983 2120 FO
+  36   36 1248 2024 FO
+  36   36 1202 2034 FO
+  36   36 1213 2036 FO
+  36   36 1963 1754 FO
+  36   36 1757 1887 FO
+  36   36 1436 1995 FO
+  36   36 1486 1999 FO
+  36   36 1083 2085 FO
+  36   36 1175 2041 FO
+  36   36  923 2147 FO
+  36   36 1028 2124 FO
+  36   36 1745 1822 FO
+  36   36 1760 1843 FO
+  36   36 1751 1854 FO
+  36   36 3143 1653 FO
+  36   36 2523 1736 FO
+  36   36 1237 2043 FO
+  36   36 1215 2039 FO
+  36   36 1448 1901 FO
+  36   36 1446 2019 FO
+  36   36 2350 1628 FO
+  36   36  964 2126 FO
+  36   36 2597 1704 FO
+  36   36 6255  988 FO
+  36   36 2442 1774 FO
+  36   36 1925 1874 FO
+  36   36 4170  927 FO
+  36   36 3678  862 FO
+  36   36 4706  763 FO
+  36   36 1333 1945 FO
+  36   36 1036 2108 FO
+  36   36 1478 1880 FO
+  36   36 1439 1903 FO
+  36   36 1505 1918 FO
+  36   36 1780 1957 FO
+  36   36  996 2132 FO
+  36   36  984 2127 FO
+  36   36  998 2108 FO
+  36   36 1186 2042 FO
+  36   36 1302 1968 FO
+  36   36 1471 1923 FO
+  36   36 1273 2004 FO
+  36   36  977 2131 FO
+  36   36 1045 2111 FO
+  36   36 1071 2104 FO
+  36   36 2999 1688 FO
+  36   36 2640 1706 FO
+  36   36 2565 1759 FO
+  36   36  998 2120 FO
+  36   36  982 2106 FO
+  36   36  958 2136 FO
+  36   36 2677 1333 FO
+  36   36 2419 1461 FO
+  36   36 2607 1413 FO
+  36   36 1424 2042 FO
+  36   36 1397 2046 FO
+  36   36 1385 2046 FO
+  36   36 2806 1691 FO
+  36   36 2736 1722 FO
+  36   36 2722 1757 FO
+  36   36  967 2132 FO
+gs 899 763 5357 1395 MR c np
+gr
+gr
+
+c8
+c0
+3065 2445 mt 
+(Heavy abundances) s
+ 616 1933 mt  -90 rotate
+(Light abundances) s
+90 rotate
+gs 899 763 5357 1395 MR c np
+/c9 { 0.000000 1.000000 1.000000 0.000000 sc} bdef
+c9
+83 -26 535 -170 536 -170 535 -170 536 -171 536 -170 535 -170 536 -170 
+535 -171 899 2151 10 MP stroke
+gr
+
+c9
+c0
+ 882 2200 mt 
+( ) s
+6239  805 mt 
+( ) s
+c1
+0 334 4204 0 0 -334 1992 1157 4 MP
+PP
+-4204 0 0 334 4204 0 0 -334 1992 1157 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+1992  823 mt 6196  823 L
+1992 1157 mt 6196 1157 L
+6196 1157 mt 6196  823 L
+1992 1157 mt 1992  823 L
+1992 1157 mt 6196 1157 L
+1992 1157 mt 1992  823 L
+1992  823 mt 6196  823 L
+1992 1157 mt 6196 1157 L
+6196 1157 mt 6196  823 L
+1992 1157 mt 1992  823 L
+2465  958 mt 
+(Quantifications #=79 R2xy=0.87 pValue=3.8451e-036) s
+gs 1992 823 4205 335 MR c np
+gs 2173 842 147 147 MR c np
+c8
+  36   36 2246  915 FO
+gr
+
+c8
+gr
+
+c8
+c0
+2465 1107 mt 
+(Regression line: m=0.94 q=0.00 SE\(m\)=0.03 SE\(q\)=0.00 RMSE=0\
+.08) s
+gs 1992 823 4205 335 MR c np
+c9
+364 0 2064 1064 2 MP stroke
+gr
+
+c9
+c1
+0 1394 5356 0 0 -1394 899 4614 4 MP
+PP
+-5356 0 0 1394 5356 0 0 -1394 899 4614 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+ 899 4614 mt 6255 4614 L
+ 899 4614 mt  899 3220 L
+ 899 4614 mt  899 4560 L
+ 866 4759 mt 
+(0) s
+1439 4614 mt 1439 4560 L
+1356 4759 mt 
+(0.1) s
+1979 4614 mt 1979 4560 L
+1896 4759 mt 
+(0.2) s
+2519 4614 mt 2519 4560 L
+2436 4759 mt 
+(0.3) s
+3059 4614 mt 3059 4560 L
+2976 4759 mt 
+(0.4) s
+3599 4614 mt 3599 4560 L
+3516 4759 mt 
+(0.5) s
+4139 4614 mt 4139 4560 L
+4056 4759 mt 
+(0.6) s
+4679 4614 mt 4679 4560 L
+4596 4759 mt 
+(0.7) s
+5219 4614 mt 5219 4560 L
+5136 4759 mt 
+(0.8) s
+5759 4614 mt 5759 4560 L
+5676 4759 mt 
+(0.9) s
+ 899 4614 mt  952 4614 L
+ 798 4658 mt 
+(0) s
+ 899 4335 mt  952 4335 L
+ 698 4379 mt 
+(0.2) s
+ 899 4056 mt  952 4056 L
+ 698 4100 mt 
+(0.4) s
+ 899 3777 mt  952 3777 L
+ 698 3821 mt 
+(0.6) s
+ 899 3498 mt  952 3498 L
+ 698 3542 mt 
+(0.8) s
+ 899 3220 mt  952 3220 L
+ 798 3264 mt 
+(1) s
+gs 899 3220 5357 1395 MR c np
+gr
+
+gs 857 3147 5472 1535 MR c np
+c8
+  36   36 6255 3220 FO
+  36   36 2200 4249 FO
+  36   36 3330 3804 FO
+  36   36 1074 4530 FO
+  36   36 1958 4439 FO
+  36   36  968 4585 FO
+  36   36 1013 4580 FO
+  36   36 1243 4503 FO
+  36   36 1761 4355 FO
+  36   36 1265 4489 FO
+  36   36 1021 4586 FO
+  36   36 1027 4577 FO
+  36   36 2192 4231 FO
+  36   36 1414 4467 FO
+  36   36 1176 4573 FO
+  36   36 3763 4128 FO
+  36   36 2114 4254 FO
+  36   36 1046 4570 FO
+  36   36 1261 4500 FO
+  36   36 1405 4521 FO
+  36   36  989 4587 FO
+  36   36 1237 4543 FO
+  36   36  933 4603 FO
+  36   36 1433 4524 FO
+  36   36 4504 3269 FO
+  36   36 1902 4447 FO
+  36   36 1578 4488 FO
+  36   36 5508 3417 FO
+  36   36 2038 4301 FO
+  36   36 1066 4530 FO
+  36   36 1866 4440 FO
+  36   36 1036 4578 FO
+  36   36 1052 4580 FO
+  36   36 1255 4498 FO
+  36   36 1712 4378 FO
+  36   36 1332 4537 FO
+  36   36 1032 4564 FO
+  36   36 2053 4278 FO
+  36   36 2117 4388 FO
+  36   36 1059 4572 FO
+  36   36 3403 4187 FO
+  36   36 1792 4293 FO
+  36   36 2673 4116 FO
+  36   36  936 4607 FO
+  36   36 1211 4519 FO
+  36   36 1007 4579 FO
+  36   36 1480 4412 FO
+  36   36  981 4597 FO
+  36   36 1341 4544 FO
+  36   36  994 4579 FO
+  36   36  930 4608 FO
+  36   36 3971 3454 FO
+  36   36 1760 4468 FO
+  36   36 1341 4493 FO
+  36   36 1068 4534 FO
+  36   36 1779 4455 FO
+  36   36  970 4590 FO
+  36   36 1034 4579 FO
+  36   36 1053 4571 FO
+  36   36 1229 4507 FO
+  36   36  990 4592 FO
+  36   36 2021 4315 FO
+  36   36 1904 4407 FO
+  36   36 1025 4567 FO
+  36   36 1053 4574 FO
+  36   36 1034 4585 FO
+  36   36 3205 4226 FO
+  36   36 2208 4223 FO
+  36   36 1197 4527 FO
+  36   36 1333 4539 FO
+  36   36 1045 4578 FO
+  36   36 1345 4443 FO
+  36   36  995 4597 FO
+  36   36 3846 4090 FO
+  36   36 1030 4572 FO
+  36   36 4328 3354 FO
+  36   36 1765 4457 FO
+  36   36 1559 4494 FO
+  36   36  964 4596 FO
+gs 899 3220 5357 1395 MR c np
+gr
+gr
+
+c8
+c0
+3065 4902 mt 
+(Heavy abundances) s
+ 616 4390 mt  -90 rotate
+(Light abundances) s
+90 rotate
+gs 899 3220 5357 1395 MR c np
+c9
+540 -144 540 -143 540 -144 540 -144 540 -143 540 -144 540 -144 540 -144 
+537 -143 902 4615 10 MP stroke
+gr
+
+c9
+c0
+3292 2711 mt 
+(Ratio: 1l1h) s
+3293 2849 mt 
+(3DSpectra) s
+3089 2987 mt 
+(Common peptides) s
+2774 3125 mt 
+(Not statistically different at 5%) s
+ 882 4657 mt 
+( ) s
+6239 3262 mt 
+( ) s
+c1
+0 334 4243 0 0 -334 1952 3614 4 MP
+PP
+-4243 0 0 334 4243 0 0 -334 1952 3614 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+1952 3280 mt 6195 3280 L
+1952 3614 mt 6195 3614 L
+6195 3614 mt 6195 3280 L
+1952 3614 mt 1952 3280 L
+1952 3614 mt 6195 3614 L
+1952 3614 mt 1952 3280 L
+1952 3280 mt 6195 3280 L
+1952 3614 mt 6195 3614 L
+6195 3614 mt 6195 3280 L
+1952 3614 mt 1952 3280 L
+2426 3415 mt 
+(Quantifications #=79 R2xy=0.90 pValue=1.1746e-040) s
+gs 1952 3280 4244 335 MR c np
+gs 2133 3299 147 147 MR c np
+c8
+  36   36 2206 3372 FO
+gr
+
+c8
+gr
+
+c8
+c0
+2426 3564 mt 
+(Regression line: m=1.03 q=-0.00 SE\(m\)=0.04 SE\(q\)=0.00 RMSE=\
+0.08) s
+gs 1952 3280 4244 335 MR c np
+c9
+365 0 2024 3521 2 MP stroke
+gr
+
+c9
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Page: 2 2
+%%BeginPageSetup
+%%PageBoundingBox:    57   199   548   594
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode 0204 7344 csm
+
+  480   208  5893  4746 MR c np
+85 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 1.000000 sc} bdef
+/c1 { 0.000000 0.000000 0.000000 0.000000 sc} bdef
+/c2 { 0.000000 0.900000 0.900000 0.100000 sc} bdef
+/c3 { 0.820000 0.000000 0.820000 0.180000 sc} bdef
+/c4 { 0.800000 0.800000 0.000000 0.200000 sc} bdef
+/c5 { 0.000000 0.090000 0.590000 0.090000 sc} bdef
+/c6 { 0.000000 0.740000 0.180000 0.000000 sc} bdef
+/c7 { 0.820000 0.000000 0.000000 0.180000 sc} bdef
+c0
+1 j
+c1
+   0    0 6913 5185 PR
+6 w
+0 1394 5356 0 0 -1394 899 2157 4 MP
+PP
+-5356 0 0 1394 5356 0 0 -1394 899 2157 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+ 899 2157 mt 6255 2157 L
+ 899 2157 mt  899  763 L
+ 899 2157 mt  899 2103 L
+%%IncludeResource: font Helvetica
+/Helvetica 120 FMS
+
+ 866 2302 mt 
+(0) s
+1434 2157 mt 1434 2103 L
+1351 2302 mt 
+(0.1) s
+1970 2157 mt 1970 2103 L
+1887 2302 mt 
+(0.2) s
+2505 2157 mt 2505 2103 L
+2422 2302 mt 
+(0.3) s
+3041 2157 mt 3041 2103 L
+2958 2302 mt 
+(0.4) s
+3577 2157 mt 3577 2103 L
+3494 2302 mt 
+(0.5) s
+4112 2157 mt 4112 2103 L
+4029 2302 mt 
+(0.6) s
+4648 2157 mt 4648 2103 L
+4565 2302 mt 
+(0.7) s
+5183 2157 mt 5183 2103 L
+5100 2302 mt 
+(0.8) s
+5719 2157 mt 5719 2103 L
+5636 2302 mt 
+(0.9) s
+6255 2157 mt 6255 2103 L
+6222 2302 mt 
+(1) s
+ 899 2157 mt  952 2157 L
+ 798 2201 mt 
+(0) s
+ 899 1920 mt  952 1920 L
+ 698 1964 mt 
+(0.1) s
+ 899 1684 mt  952 1684 L
+ 698 1728 mt 
+(0.2) s
+ 899 1448 mt  952 1448 L
+ 698 1492 mt 
+(0.3) s
+ 899 1212 mt  952 1212 L
+ 698 1256 mt 
+(0.4) s
+ 899  976 mt  952  976 L
+ 698 1020 mt 
+(0.5) s
+3292  392 mt 
+(Ratio: 1l2h) s
+2936  530 mt 
+(Maspectras: ASAPRatio) s
+3089  668 mt 
+(Common peptides) s
+gs 899 763 5357 1395 MR c np
+gr
+
+gs 902 690 5427 1522 MR c np
+/c8 { 1.000000 1.000000 0.000000 0.000000 sc} bdef
+c8
+  36   36 6255  875 FO
+  36   36 4435 1266 FO
+  36   36 3883 1381 FO
+  36   36 1502 1992 FO
+  36   36 4123 1224 FO
+  36   36 4023 1222 FO
+  36   36 1448 1965 FO
+  36   36 2382 1922 FO
+  36   36 1146 2094 FO
+  36   36 1266 2060 FO
+  36   36 1276 2102 FO
+  36   36 1429 2006 FO
+  36   36 1438 2015 FO
+  36   36 3975 1396 FO
+  36   36 3862 1721 FO
+  36   36 3166 1843 FO
+  36   36  975 2138 FO
+  36   36 2133 1798 FO
+  36   36 1413 2023 FO
+  36   36 1405 2033 FO
+  36   36 3362 1587 FO
+  36   36 2775 1570 FO
+  36   36 2849 1548 FO
+  36   36 2895 1894 FO
+  36   36 5001  982 FO
+  36   36 4928 1033 FO
+  36   36 5041  763 FO
+  36   36 1713 1945 FO
+  36   36 1695 1932 FO
+  36   36 2075 1960 FO
+  36   36 1327 2038 FO
+  36   36 1568 1973 FO
+  36   36 1116 2116 FO
+  36   36 1556 2063 FO
+  36   36 1603 2054 FO
+  36   36 1840 2013 FO
+  36   36 1803 2029 FO
+  36   36 1288 2058 FO
+  36   36 1231 2060 FO
+gr
+
+c8
+gs 899 763 5357 1395 MR c np
+gr
+
+c0
+3065 2445 mt 
+(Heavy abundances) s
+ 616 1933 mt  -90 rotate
+(Light abundances) s
+90 rotate
+gs 899 763 5357 1395 MR c np
+/c9 { 0.000000 1.000000 1.000000 0.000000 sc} bdef
+c9
+536 -136 536 -137 535 -137 536 -136 535 -137 536 -136 536 -137 535 -137 
+536 -136 476 -122 958 2158 11 MP stroke
+gr
+
+c9
+c0
+ 882 2200 mt 
+( ) s
+6239  805 mt 
+( ) s
+c1
+0 334 4243 0 0 -334 1952 1157 4 MP
+PP
+-4243 0 0 334 4243 0 0 -334 1952 1157 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+1952  823 mt 6195  823 L
+1952 1157 mt 6195 1157 L
+6195 1157 mt 6195  823 L
+1952 1157 mt 1952  823 L
+1952 1157 mt 6195 1157 L
+1952 1157 mt 1952  823 L
+1952  823 mt 6195  823 L
+1952 1157 mt 6195 1157 L
+6195 1157 mt 6195  823 L
+1952 1157 mt 1952  823 L
+2426  958 mt 
+(Quantifications #=39 R2xy=0.92 pValue=8.6088e-022) s
+gs 1952 823 4244 335 MR c np
+gs 2133 842 147 147 MR c np
+c8
+  36   36 2206  915 FO
+gr
+
+c8
+gr
+
+c8
+c0
+2426 1107 mt 
+(Regression line: m=0.58 q=-0.01 SE\(m\)=0.03 SE\(q\)=0.01 RMSE=\
+0.09) s
+gs 1952 823 4244 335 MR c np
+c9
+365 0 2024 1064 2 MP stroke
+gr
+
+c9
+c1
+0 1394 5356 0 0 -1394 899 4614 4 MP
+PP
+-5356 0 0 1394 5356 0 0 -1394 899 4614 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+ 899 4614 mt 6255 4614 L
+ 899 4614 mt  899 3220 L
+ 899 4614 mt  899 4560 L
+ 866 4759 mt 
+(0) s
+1434 4614 mt 1434 4560 L
+1351 4759 mt 
+(0.1) s
+1970 4614 mt 1970 4560 L
+1887 4759 mt 
+(0.2) s
+2505 4614 mt 2505 4560 L
+2422 4759 mt 
+(0.3) s
+3041 4614 mt 3041 4560 L
+2958 4759 mt 
+(0.4) s
+3577 4614 mt 3577 4560 L
+3494 4759 mt 
+(0.5) s
+4112 4614 mt 4112 4560 L
+4029 4759 mt 
+(0.6) s
+4648 4614 mt 4648 4560 L
+4565 4759 mt 
+(0.7) s
+5183 4614 mt 5183 4560 L
+5100 4759 mt 
+(0.8) s
+5719 4614 mt 5719 4560 L
+5636 4759 mt 
+(0.9) s
+6255 4614 mt 6255 4560 L
+6222 4759 mt 
+(1) s
+ 899 4614 mt  952 4614 L
+ 798 4658 mt 
+(0) s
+ 899 4357 mt  952 4357 L
+ 698 4401 mt 
+(0.1) s
+ 899 4100 mt  952 4100 L
+ 698 4144 mt 
+(0.2) s
+ 899 3843 mt  952 3843 L
+ 698 3887 mt 
+(0.3) s
+ 899 3586 mt  952 3586 L
+ 698 3630 mt 
+(0.4) s
+ 899 3329 mt  952 3329 L
+ 698 3373 mt 
+(0.5) s
+gs 899 3220 5357 1395 MR c np
+gr
+
+gs 899 3147 5430 1523 MR c np
+c8
+  36   36 6255 3220 FO
+  36   36 2106 4285 FO
+  36   36 2976 3926 FO
+  36   36 2040 4416 FO
+  36   36 1656 4489 FO
+  36   36 1501 4408 FO
+  36   36 2233 4200 FO
+  36   36 1134 4543 FO
+  36   36 1296 4497 FO
+  36   36 1525 4513 FO
+  36   36 1015 4572 FO
+  36   36 1719 4477 FO
+  36   36 2106 4285 FO
+  36   36 2953 3926 FO
+  36   36 1354 4434 FO
+  36   36 1114 4573 FO
+  36   36 1203 4516 FO
+  36   36 1664 4461 FO
+  36   36 1234 4522 FO
+  36   36 1640 4365 FO
+  36   36 2247 4186 FO
+  36   36 1192 4565 FO
+  36   36 1093 4555 FO
+  36   36 1991 4295 FO
+  36   36 1021 4575 FO
+  36   36 1088 4563 FO
+  36   36 1138 4570 FO
+  36   36 1642 4477 FO
+  36   36  972 4596 FO
+  36   36 1875 4344 FO
+  36   36 1198 4541 FO
+  36   36 1435 4452 FO
+  36   36 1532 4396 FO
+  36   36 2328 4182 FO
+  36   36 1139 4534 FO
+  36   36 1261 4559 FO
+  36   36 1109 4547 FO
+  36   36 1735 4484 FO
+  36   36 1097 4548 FO
+gs 899 3220 5357 1395 MR c np
+gr
+gr
+
+c8
+c0
+3065 4902 mt 
+(Heavy abundances) s
+ 616 4390 mt  -90 rotate
+(Light abundances) s
+90 rotate
+gs 899 3220 5357 1395 MR c np
+c9
+240 -66 536 -148 535 -149 536 -148 535 -148 536 -149 536 -148 535 -148 
+536 -149 513 -142 921 4615 11 MP stroke
+gr
+
+c9
+c0
+3292 2711 mt 
+(Ratio: 1l2h) s
+3293 2849 mt 
+(3DSpectra) s
+3089 2987 mt 
+(Common peptides) s
+2774 3125 mt 
+(Not statistically different at 5%) s
+ 882 4657 mt 
+( ) s
+6239 3262 mt 
+( ) s
+c1
+0 334 4243 0 0 -334 1952 3614 4 MP
+PP
+-4243 0 0 334 4243 0 0 -334 1952 3614 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+1952 3280 mt 6195 3280 L
+1952 3614 mt 6195 3614 L
+6195 3614 mt 6195 3280 L
+1952 3614 mt 1952 3280 L
+1952 3614 mt 6195 3614 L
+1952 3614 mt 1952 3280 L
+1952 3280 mt 6195 3280 L
+1952 3614 mt 6195 3614 L
+6195 3614 mt 6195 3280 L
+1952 3614 mt 1952 3280 L
+2426 3415 mt 
+(Quantifications #=39 R2xy=0.96 pValue=3.8425e-027) s
+gs 1952 3280 4244 335 MR c np
+gs 2133 3299 147 147 MR c np
+c8
+  36   36 2206 3372 FO
+gr
+
+c8
+gr
+
+c8
+c0
+2426 3564 mt 
+(Regression line: m=0.58 q=-0.00 SE\(m\)=0.03 SE\(q\)=0.00 RMSE=\
+0.06) s
+gs 1952 3280 4244 335 MR c np
+c9
+365 0 2024 3521 2 MP stroke
+gr
+
+c9
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Page: 3 3
+%%BeginPageSetup
+%%PageBoundingBox:    57   199   548   594
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode 0204 7344 csm
+
+  480   208  5893  4746 MR c np
+85 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 1.000000 sc} bdef
+/c1 { 0.000000 0.000000 0.000000 0.000000 sc} bdef
+/c2 { 0.000000 0.900000 0.900000 0.100000 sc} bdef
+/c3 { 0.820000 0.000000 0.820000 0.180000 sc} bdef
+/c4 { 0.800000 0.800000 0.000000 0.200000 sc} bdef
+/c5 { 0.000000 0.090000 0.590000 0.090000 sc} bdef
+/c6 { 0.000000 0.740000 0.180000 0.000000 sc} bdef
+/c7 { 0.820000 0.000000 0.000000 0.180000 sc} bdef
+c0
+1 j
+c1
+   0    0 6913 5185 PR
+6 w
+0 1394 5356 0 0 -1394 899 2157 4 MP
+PP
+-5356 0 0 1394 5356 0 0 -1394 899 2157 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+ 899 2157 mt 6255 2157 L
+ 899 2157 mt  899  763 L
+ 899 2157 mt  899 2103 L
+%%IncludeResource: font Helvetica
+/Helvetica 120 FMS
+
+ 866 2302 mt 
+(0) s
+1434 2157 mt 1434 2103 L
+1351 2302 mt 
+(0.1) s
+1970 2157 mt 1970 2103 L
+1887 2302 mt 
+(0.2) s
+2505 2157 mt 2505 2103 L
+2422 2302 mt 
+(0.3) s
+3041 2157 mt 3041 2103 L
+2958 2302 mt 
+(0.4) s
+3577 2157 mt 3577 2103 L
+3494 2302 mt 
+(0.5) s
+4112 2157 mt 4112 2103 L
+4029 2302 mt 
+(0.6) s
+4648 2157 mt 4648 2103 L
+4565 2302 mt 
+(0.7) s
+5183 2157 mt 5183 2103 L
+5100 2302 mt 
+(0.8) s
+5719 2157 mt 5719 2103 L
+5636 2302 mt 
+(0.9) s
+6255 2157 mt 6255 2103 L
+6222 2302 mt 
+(1) s
+ 899 2157 mt  952 2157 L
+ 798 2201 mt 
+(0) s
+ 899 1745 mt  952 1745 L
+ 698 1789 mt 
+(0.1) s
+ 899 1333 mt  952 1333 L
+ 698 1377 mt 
+(0.2) s
+ 899  921 mt  952  921 L
+ 698  965 mt 
+(0.3) s
+3292  392 mt 
+(Ratio: 1l5h) s
+2936  530 mt 
+(Maspectras: ASAPRatio) s
+3089  668 mt 
+(Common peptides) s
+gs 899 763 5357 1395 MR c np
+gr
+
+gs 928 690 5401 1506 MR c np
+/c8 { 1.000000 1.000000 0.000000 0.000000 sc} bdef
+c8
+  36   36 6255  848 FO
+  36   36 6042  920 FO
+  36   36 5245 1091 FO
+  36   36 4462 1308 FO
+  36   36 5700 1009 FO
+  36   36 4920 1015 FO
+  36   36 5413  881 FO
+  36   36 1515 1967 FO
+  36   36 2716 1936 FO
+  36   36 2714 1941 FO
+  36   36 1601 2008 FO
+  36   36 1500 1997 FO
+  36   36 1505 2021 FO
+  36   36 1644 2009 FO
+  36   36 3864 1794 FO
+  36   36 1001 2122 FO
+  36   36 1451 2089 FO
+  36   36 2440 1780 FO
+  36   36 4018 1758 FO
+  36   36 1657 2011 FO
+  36   36 1682 1982 FO
+  36   36 4433 1848 FO
+  36   36 1690 1960 FO
+  36   36 3960 1422 FO
+  36   36 3736 1748 FO
+  36   36 3742 1665 FO
+  36   36 5999  805 FO
+  36   36 6057  763 FO
+  36   36 3195 1592 FO
+  36   36 1251 2072 FO
+  36   36 4693  859 FO
+  36   36 1344 2096 FO
+  36   36 1343 2109 FO
+  36   36 2114 2011 FO
+  36   36 1980 2022 FO
+  36   36 2053 2021 FO
+  36   36 1278 2062 FO
+gr
+
+c8
+gs 899 763 5357 1395 MR c np
+gr
+
+c0
+3065 2445 mt 
+(Heavy abundances) s
+ 616 1933 mt  -90 rotate
+(Light abundances) s
+90 rotate
+gs 899 763 5357 1395 MR c np
+/c9 { 0.000000 1.000000 1.000000 0.000000 sc} bdef
+c9
+536 -120 536 -119 535 -119 536 -120 535 -119 536 -120 536 -119 535 -120 
+536 -119 397 -89 1037 2158 11 MP stroke
+gr
+
+c9
+c0
+ 882 2200 mt 
+( ) s
+6239  805 mt 
+( ) s
+c1
+0 334 4243 0 0 -334 1952 1157 4 MP
+PP
+-4243 0 0 334 4243 0 0 -334 1952 1157 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+1952  823 mt 6195  823 L
+1952 1157 mt 6195 1157 L
+6195 1157 mt 6195  823 L
+1952 1157 mt 1952  823 L
+1952 1157 mt 6195 1157 L
+1952 1157 mt 1952  823 L
+1952  823 mt 6195  823 L
+1952 1157 mt 6195 1157 L
+6195 1157 mt 6195  823 L
+1952 1157 mt 1952  823 L
+2426  958 mt 
+(Quantifications #=37 R2xy=0.88 pValue=6.931e-018) s
+gs 1952 823 4244 335 MR c np
+gs 2133 842 147 147 MR c np
+c8
+  36   36 2206  915 FO
+gr
+
+c8
+gr
+
+c8
+c0
+2426 1107 mt 
+(Regression line: m=0.29 q=-0.01 SE\(m\)=0.02 SE\(q\)=0.01 RMSE=\
+0.10) s
+gs 1952 823 4244 335 MR c np
+c9
+365 0 2024 1064 2 MP stroke
+gr
+
+c9
+c1
+0 1394 5356 0 0 -1394 899 4614 4 MP
+PP
+-5356 0 0 1394 5356 0 0 -1394 899 4614 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+ 899 4614 mt 6255 4614 L
+ 899 4614 mt  899 3220 L
+ 899 4614 mt  899 4560 L
+ 866 4759 mt 
+(0) s
+1434 4614 mt 1434 4560 L
+1351 4759 mt 
+(0.1) s
+1970 4614 mt 1970 4560 L
+1887 4759 mt 
+(0.2) s
+2505 4614 mt 2505 4560 L
+2422 4759 mt 
+(0.3) s
+3041 4614 mt 3041 4560 L
+2958 4759 mt 
+(0.4) s
+3577 4614 mt 3577 4560 L
+3494 4759 mt 
+(0.5) s
+4112 4614 mt 4112 4560 L
+4029 4759 mt 
+(0.6) s
+4648 4614 mt 4648 4560 L
+4565 4759 mt 
+(0.7) s
+5183 4614 mt 5183 4560 L
+5100 4759 mt 
+(0.8) s
+5719 4614 mt 5719 4560 L
+5636 4759 mt 
+(0.9) s
+6255 4614 mt 6255 4560 L
+6222 4759 mt 
+(1) s
+ 899 4614 mt  952 4614 L
+ 798 4658 mt 
+(0) s
+ 899 4149 mt  952 4149 L
+ 698 4193 mt 
+(0.1) s
+ 899 3685 mt  952 3685 L
+ 698 3729 mt 
+(0.2) s
+ 899 3221 mt  952 3221 L
+ 698 3265 mt 
+(0.3) s
+gs 899 3220 5357 1395 MR c np
+gr
+
+gs 886 3147 5443 1528 MR c np
+c8
+  36   36 6255 3220 FO
+  36   36 2059 4285 FO
+  36   36 1408 4447 FO
+  36   36 2311 4408 FO
+  36   36 1288 4510 FO
+  36   36 1114 4574 FO
+  36   36 1161 4550 FO
+  36   36 1784 4364 FO
+  36   36 2329 4187 FO
+  36   36 1134 4546 FO
+  36   36 1163 4577 FO
+  36   36 1933 4484 FO
+  36   36 5859 3280 FO
+  36   36 2004 4323 FO
+  36   36 3500 3849 FO
+  36   36 1569 4524 FO
+  36   36 1236 4521 FO
+  36   36 1131 4556 FO
+  36   36 1049 4601 FO
+  36   36 1574 4470 FO
+  36   36 1099 4567 FO
+  36   36 1964 4322 FO
+  36   36 2342 4153 FO
+  36   36 1254 4566 FO
+  36   36 1820 4493 FO
+  36   36 1169 4543 FO
+  36   36 2337 4236 FO
+  36   36 3572 3815 FO
+  36   36 3507 4319 FO
+  36   36  959 4592 FO
+  36   36 2014 4361 FO
+  36   36 2930 4309 FO
+  36   36 1565 4406 FO
+  36   36 1704 4390 FO
+  36   36 5307 3314 FO
+  36   36 1161 4586 FO
+  36   36 1921 4474 FO
+gs 899 3220 5357 1395 MR c np
+gr
+gr
+
+c8
+c0
+3065 4902 mt 
+(Heavy abundances) s
+ 616 4390 mt  -90 rotate
+(Light abundances) s
+90 rotate
+gs 899 3220 5357 1395 MR c np
+c9
+536 -131 536 -131 535 -131 536 -132 535 -131 536 -131 536 -131 535 -131 
+536 -131 474 -117 960 4615 11 MP stroke
+gr
+
+c9
+c0
+3292 2711 mt 
+(Ratio: 1l5h) s
+3293 2849 mt 
+(3DSpectra) s
+3089 2987 mt 
+(Common peptides) s
+2774 3125 mt 
+(Not statistically different at 5%) s
+ 882 4657 mt 
+( ) s
+6239 3262 mt 
+( ) s
+c1
+0 334 4243 0 0 -334 1952 3614 4 MP
+PP
+-4243 0 0 334 4243 0 0 -334 1952 3614 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+1952 3280 mt 6195 3280 L
+1952 3614 mt 6195 3614 L
+6195 3614 mt 6195 3280 L
+1952 3614 mt 1952 3280 L
+1952 3614 mt 6195 3614 L
+1952 3614 mt 1952 3280 L
+1952 3280 mt 6195 3280 L
+1952 3614 mt 6195 3614 L
+6195 3614 mt 6195 3280 L
+1952 3614 mt 1952 3280 L
+2426 3415 mt 
+(Quantifications #=37 R2xy=0.93 pValue=2.7459e-022) s
+gs 1952 3280 4244 335 MR c np
+gs 2133 3299 147 147 MR c np
+c8
+  36   36 2206 3372 FO
+gr
+
+c8
+gr
+
+c8
+c0
+2426 3564 mt 
+(Regression line: m=0.28 q=-0.00 SE\(m\)=0.02 SE\(q\)=0.00 RMSE=\
+0.07) s
+gs 1952 3280 4244 335 MR c np
+c9
+365 0 2024 3521 2 MP stroke
+gr
+
+c9
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Page: 4 4
+%%BeginPageSetup
+%%PageBoundingBox:    51   199   548   594
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode 0204 7344 csm
+
+  413   208  5960  4746 MR c np
+85 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 1.000000 sc} bdef
+/c1 { 0.000000 0.000000 0.000000 0.000000 sc} bdef
+/c2 { 0.000000 0.900000 0.900000 0.100000 sc} bdef
+/c3 { 0.820000 0.000000 0.820000 0.180000 sc} bdef
+/c4 { 0.800000 0.800000 0.000000 0.200000 sc} bdef
+/c5 { 0.000000 0.090000 0.590000 0.090000 sc} bdef
+/c6 { 0.000000 0.740000 0.180000 0.000000 sc} bdef
+/c7 { 0.820000 0.000000 0.000000 0.180000 sc} bdef
+c0
+1 j
+c1
+   0    0 6913 5185 PR
+6 w
+0 1394 5356 0 0 -1394 899 2157 4 MP
+PP
+-5356 0 0 1394 5356 0 0 -1394 899 2157 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+ 899 2157 mt 6255 2157 L
+ 899 2157 mt  899  763 L
+ 899 2157 mt  899 2103 L
+%%IncludeResource: font Helvetica
+/Helvetica 120 FMS
+
+ 866 2302 mt 
+(0) s
+1434 2157 mt 1434 2103 L
+1351 2302 mt 
+(0.1) s
+1970 2157 mt 1970 2103 L
+1887 2302 mt 
+(0.2) s
+2505 2157 mt 2505 2103 L
+2422 2302 mt 
+(0.3) s
+3041 2157 mt 3041 2103 L
+2958 2302 mt 
+(0.4) s
+3577 2157 mt 3577 2103 L
+3494 2302 mt 
+(0.5) s
+4112 2157 mt 4112 2103 L
+4029 2302 mt 
+(0.6) s
+4648 2157 mt 4648 2103 L
+4565 2302 mt 
+(0.7) s
+5183 2157 mt 5183 2103 L
+5100 2302 mt 
+(0.8) s
+5719 2157 mt 5719 2103 L
+5636 2302 mt 
+(0.9) s
+6255 2157 mt 6255 2103 L
+6222 2302 mt 
+(1) s
+ 899 2157 mt  952 2157 L
+ 798 2201 mt 
+(0) s
+ 899 1790 mt  952 1790 L
+ 631 1834 mt 
+(0.05) s
+ 899 1423 mt  952 1423 L
+ 698 1467 mt 
+(0.1) s
+ 899 1056 mt  952 1056 L
+ 631 1100 mt 
+(0.15) s
+3259  392 mt 
+(Ratio: 1l10h) s
+2936  530 mt 
+(Maspectras: ASAPRatio) s
+3089  668 mt 
+(Common peptides) s
+gs 899 763 5357 1395 MR c np
+gr
+
+gs 854 690 5475 1532 MR c np
+/c8 { 1.000000 1.000000 0.000000 0.000000 sc} bdef
+c8
+  36   36 5741  790 FO
+  36   36 5089  767 FO
+  36   36 2634 1987 FO
+  36   36 2727 1967 FO
+  36   36 1110 2117 FO
+  36   36 2302 1906 FO
+  36   36 2336 1967 FO
+  36   36 2343 1931 FO
+  36   36 3846 1848 FO
+  36   36 1567 2043 FO
+  36   36 1612 2028 FO
+  36   36 1850 2017 FO
+  36   36 3692 1579 FO
+  36   36 6255  763 FO
+  36   36 1455 2042 FO
+  36   36 1806 2004 FO
+  36   36 2217 1953 FO
+  36   36 2203 1940 FO
+  36   36 2134 2032 FO
+  36   36  927 2148 FO
+  36   36 1296 2037 FO
+gs 899 763 5357 1395 MR c np
+gr
+gr
+
+c8
+c0
+3065 2445 mt 
+(Heavy abundances) s
+ 549 1933 mt  -90 rotate
+(Light abundances) s
+90 rotate
+gs 899 763 5357 1395 MR c np
+/c9 { 0.000000 1.000000 1.000000 0.000000 sc} bdef
+c9
+536 -101 536 -100 535 -100 536 -101 535 -100 536 -100 536 -101 535 -100 
+536 -100 486 -92 948 2158 11 MP stroke
+gr
+
+c9
+c0
+ 882 2200 mt 
+( ) s
+6239  805 mt 
+( ) s
+c1
+0 334 4243 0 0 -334 1952 1157 4 MP
+PP
+-4243 0 0 334 4243 0 0 -334 1952 1157 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+1952  823 mt 6195  823 L
+1952 1157 mt 6195 1157 L
+6195 1157 mt 6195  823 L
+1952 1157 mt 1952  823 L
+1952 1157 mt 6195 1157 L
+1952 1157 mt 1952  823 L
+1952  823 mt 6195  823 L
+1952 1157 mt 6195 1157 L
+6195 1157 mt 6195  823 L
+1952 1157 mt 1952  823 L
+2426  958 mt 
+(Quantifications #=21 R2xy=0.89 pValue=9.9757e-011) s
+gs 1952 823 4244 335 MR c np
+gs 2133 842 147 147 MR c np
+c8
+  36   36 2206  915 FO
+gr
+
+c8
+gr
+
+c8
+c0
+2426 1107 mt 
+(Regression line: m=0.14 q=-0.00 SE\(m\)=0.02 SE\(q\)=0.00 RMSE=\
+0.08) s
+gs 1952 823 4244 335 MR c np
+c9
+365 0 2024 1064 2 MP stroke
+gr
+
+c9
+c1
+0 1394 5356 0 0 -1394 899 4614 4 MP
+PP
+-5356 0 0 1394 5356 0 0 -1394 899 4614 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+ 899 4614 mt 6255 4614 L
+ 899 4614 mt  899 3220 L
+ 899 4614 mt  899 4560 L
+ 866 4759 mt 
+(0) s
+1434 4614 mt 1434 4560 L
+1351 4759 mt 
+(0.1) s
+1970 4614 mt 1970 4560 L
+1887 4759 mt 
+(0.2) s
+2505 4614 mt 2505 4560 L
+2422 4759 mt 
+(0.3) s
+3041 4614 mt 3041 4560 L
+2958 4759 mt 
+(0.4) s
+3577 4614 mt 3577 4560 L
+3494 4759 mt 
+(0.5) s
+4112 4614 mt 4112 4560 L
+4029 4759 mt 
+(0.6) s
+4648 4614 mt 4648 4560 L
+4565 4759 mt 
+(0.7) s
+5183 4614 mt 5183 4560 L
+5100 4759 mt 
+(0.8) s
+5719 4614 mt 5719 4560 L
+5636 4759 mt 
+(0.9) s
+6255 4614 mt 6255 4560 L
+6222 4759 mt 
+(1) s
+ 899 4614 mt  952 4614 L
+ 798 4658 mt 
+(0) s
+ 899 4320 mt  952 4320 L
+ 631 4364 mt 
+(0.05) s
+ 899 4027 mt  952 4027 L
+ 698 4071 mt 
+(0.1) s
+ 899 3734 mt  952 3734 L
+ 631 3778 mt 
+(0.15) s
+ 899 3441 mt  952 3441 L
+ 698 3485 mt 
+(0.2) s
+gs 899 3220 5357 1395 MR c np
+gr
+
+gs 883 3147 5446 1524 MR c np
+c8
+  36   36 6255 3220 FO
+  36   36 3792 4357 FO
+  36   36 3257 4303 FO
+  36   36 4909 4245 FO
+  36   36 2078 4441 FO
+  36   36  956 4595 FO
+  36   36 1536 4523 FO
+  36   36 1652 4531 FO
+  36   36 3310 4402 FO
+  36   36 1462 4497 FO
+  36   36 4065 4257 FO
+  36   36 3077 4455 FO
+  36   36 1300 4527 FO
+  36   36 1805 4486 FO
+  36   36 3415 4267 FO
+  36   36  995 4597 FO
+  36   36 3084 4263 FO
+  36   36 4627 3717 FO
+  36   36 1145 4573 FO
+  36   36 1650 4516 FO
+  36   36 3073 4448 FO
+gs 899 3220 5357 1395 MR c np
+gr
+gr
+
+c8
+c0
+3065 4902 mt 
+(Heavy abundances) s
+ 549 4390 mt  -90 rotate
+(Light abundances) s
+90 rotate
+gs 899 3220 5357 1395 MR c np
+c9
+536 -66 536 -66 535 -67 536 -66 535 -66 536 -66 536 -66 535 -66 
+536 -67 535 -66 899 4608 11 MP stroke
+gr
+
+c9
+c0
+3259 2711 mt 
+(Ratio: 1l10h) s
+3293 2849 mt 
+(3DSpectra) s
+3089 2987 mt 
+(Common peptides) s
+2774 3125 mt 
+(Not statistically different at 5%) s
+ 882 4657 mt 
+( ) s
+6239 3262 mt 
+( ) s
+c1
+0 334 4204 0 0 -334 1992 3614 4 MP
+PP
+-4204 0 0 334 4204 0 0 -334 1992 3614 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+1992 3280 mt 6196 3280 L
+1992 3614 mt 6196 3614 L
+6196 3614 mt 6196 3280 L
+1992 3614 mt 1992 3280 L
+1992 3614 mt 6196 3614 L
+1992 3614 mt 1992 3280 L
+1992 3280 mt 6196 3280 L
+1992 3614 mt 6196 3614 L
+6196 3614 mt 6196 3280 L
+1992 3614 mt 1992 3280 L
+2465 3415 mt 
+(Quantifications #=21 R2xy=0.72 pValue=6.2142e-007) s
+gs 1992 3280 4205 335 MR c np
+gs 2173 3299 147 147 MR c np
+c8
+  36   36 2246 3372 FO
+gr
+
+c8
+gr
+
+c8
+c0
+2465 3564 mt 
+(Regression line: m=0.11 q=0.00 SE\(m\)=0.01 SE\(q\)=0.00 RMSE=0\
+.09) s
+gs 1992 3280 4205 335 MR c np
+c9
+364 0 2064 3521 2 MP stroke
+gr
+
+c9
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Page: 5 5
+%%BeginPageSetup
+%%PageBoundingBox:    57   199   545   594
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode 0204 7344 csm
+
+  480   208  5865  4746 MR c np
+85 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 1.000000 sc} bdef
+/c1 { 0.000000 0.000000 0.000000 0.000000 sc} bdef
+/c2 { 0.000000 0.900000 0.900000 0.100000 sc} bdef
+/c3 { 0.820000 0.000000 0.820000 0.180000 sc} bdef
+/c4 { 0.800000 0.800000 0.000000 0.200000 sc} bdef
+/c5 { 0.000000 0.090000 0.590000 0.090000 sc} bdef
+/c6 { 0.000000 0.740000 0.180000 0.000000 sc} bdef
+/c7 { 0.820000 0.000000 0.000000 0.180000 sc} bdef
+c0
+1 j
+c1
+   0    0 6913 5185 PR
+6 w
+0 1394 5356 0 0 -1394 899 2157 4 MP
+PP
+-5356 0 0 1394 5356 0 0 -1394 899 2157 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+ 899 2157 mt 6255 2157 L
+ 899 2157 mt  899  763 L
+ 899 2157 mt  899 2103 L
+%%IncludeResource: font Helvetica
+/Helvetica 120 FMS
+
+ 866 2302 mt 
+(0) s
+1471 2157 mt 1471 2103 L
+1355 2302 mt 
+(0.05) s
+2044 2157 mt 2044 2103 L
+1961 2302 mt 
+(0.1) s
+2617 2157 mt 2617 2103 L
+2501 2302 mt 
+(0.15) s
+3190 2157 mt 3190 2103 L
+3107 2302 mt 
+(0.2) s
+3763 2157 mt 3763 2103 L
+3647 2302 mt 
+(0.25) s
+4336 2157 mt 4336 2103 L
+4253 2302 mt 
+(0.3) s
+4909 2157 mt 4909 2103 L
+4793 2302 mt 
+(0.35) s
+5482 2157 mt 5482 2103 L
+5399 2302 mt 
+(0.4) s
+6054 2157 mt 6054 2103 L
+5938 2302 mt 
+(0.45) s
+ 899 2157 mt  952 2157 L
+ 798 2201 mt 
+(0) s
+ 899 1878 mt  952 1878 L
+ 698 1922 mt 
+(0.2) s
+ 899 1599 mt  952 1599 L
+ 698 1643 mt 
+(0.4) s
+ 899 1320 mt  952 1320 L
+ 698 1364 mt 
+(0.6) s
+ 899 1041 mt  952 1041 L
+ 698 1085 mt 
+(0.8) s
+ 899  763 mt  952  763 L
+ 798  807 mt 
+(1) s
+3292  392 mt 
+(Ratio: 2l1h) s
+2936  530 mt 
+(Maspectras: ASAPRatio) s
+3089  668 mt 
+(Common peptides) s
+gs 899 763 5357 1395 MR c np
+gr
+
+gs 988 690 5341 1516 MR c np
+/c8 { 1.000000 1.000000 0.000000 0.000000 sc} bdef
+c8
+  36   36 3885 1224 FO
+  36   36 1696 1880 FO
+  36   36 1584 1923 FO
+  36   36 1726 1911 FO
+  36   36 1116 2094 FO
+  36   36 1236 2055 FO
+  36   36 1276 2057 FO
+  36   36 1572 1976 FO
+  36   36 2444 1840 FO
+  36   36 4086 1834 FO
+  36   36 3915 1623 FO
+  36   36 1884 1819 FO
+  36   36 1474 2006 FO
+  36   36 2048 1868 FO
+  36   36 1755 1840 FO
+  36   36 1731 1879 FO
+  36   36 1875 1857 FO
+  36   36 1826 1849 FO
+  36   36 6255  763 FO
+  36   36 5816  844 FO
+  36   36 1061 2132 FO
+  36   36 2387 1864 FO
+  36   36 2527 1887 FO
+  36   36 1291 2034 FO
+  36   36 1287 2079 FO
+  36   36 4992 1523 FO
+  36   36 2045 2019 FO
+  36   36 2965 1419 FO
+  36   36 1818 1896 FO
+  36   36 1896 1977 FO
+  36   36 1908 1987 FO
+  36   36 2017 1972 FO
+gr
+
+c8
+gs 899 763 5357 1395 MR c np
+gr
+
+c0
+3065 2445 mt 
+(Heavy abundances) s
+ 616 1933 mt  -90 rotate
+(Light abundances) s
+90 rotate
+gs 899 763 5357 1395 MR c np
+/c9 { 0.000000 1.000000 1.000000 0.000000 sc} bdef
+c9
+1146 -289 1146 -288 1146 -288 1129 -285 915 2158 5 MP stroke
+gr
+
+c9
+c0
+ 882 2200 mt 
+( ) s
+6239  805 mt 
+( ) s
+c1
+0 334 4243 0 0 -334 1952 1157 4 MP
+PP
+-4243 0 0 334 4243 0 0 -334 1952 1157 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+1952  823 mt 6195  823 L
+1952 1157 mt 6195 1157 L
+6195 1157 mt 6195  823 L
+1952 1157 mt 1952  823 L
+1952 1157 mt 6195 1157 L
+1952 1157 mt 1952  823 L
+1952  823 mt 6195  823 L
+1952 1157 mt 6195 1157 L
+6195 1157 mt 6195  823 L
+1952 1157 mt 1952  823 L
+2426  958 mt 
+(Quantifications #=32 R2xy=0.82 pValue=3.8223e-013) s
+gs 1952 823 4244 335 MR c np
+gs 2133 842 147 147 MR c np
+c8
+  36   36 2206  915 FO
+gr
+
+c8
+gr
+
+c8
+c0
+2426 1107 mt 
+(Regression line: m=2.07 q=-0.00 SE\(m\)=0.18 SE\(q\)=0.02 RMSE=\
+0.10) s
+gs 1952 823 4244 335 MR c np
+c9
+365 0 2024 1064 2 MP stroke
+gr
+
+c9
+c1
+0 1394 5356 0 0 -1394 899 4614 4 MP
+PP
+-5356 0 0 1394 5356 0 0 -1394 899 4614 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+ 899 4614 mt 6255 4614 L
+ 899 4614 mt  899 3220 L
+ 899 4614 mt  899 4560 L
+ 866 4759 mt 
+(0) s
+1684 4614 mt 1684 4560 L
+1601 4759 mt 
+(0.1) s
+2469 4614 mt 2469 4560 L
+2386 4759 mt 
+(0.2) s
+3254 4614 mt 3254 4560 L
+3171 4759 mt 
+(0.3) s
+4039 4614 mt 4039 4560 L
+3956 4759 mt 
+(0.4) s
+4824 4614 mt 4824 4560 L
+4741 4759 mt 
+(0.5) s
+5610 4614 mt 5610 4560 L
+5527 4759 mt 
+(0.6) s
+ 899 4614 mt  952 4614 L
+ 798 4658 mt 
+(0) s
+ 899 4335 mt  952 4335 L
+ 698 4379 mt 
+(0.2) s
+ 899 4056 mt  952 4056 L
+ 698 4100 mt 
+(0.4) s
+ 899 3777 mt  952 3777 L
+ 698 3821 mt 
+(0.6) s
+ 899 3498 mt  952 3498 L
+ 698 3542 mt 
+(0.8) s
+ 899 3220 mt  952 3220 L
+ 798 3264 mt 
+(1) s
+gs 899 3220 5357 1395 MR c np
+gr
+
+gs 873 3147 5456 1526 MR c np
+c8
+  36   36 1754 4133 FO
+  36   36 1062 4542 FO
+  36   36 1056 4546 FO
+  36   36 1441 4434 FO
+  36   36 1192 4522 FO
+  36   36 1905 4159 FO
+  36   36 1161 4571 FO
+  36   36 2794 4201 FO
+  36   36 1343 4541 FO
+  36   36 1962 4369 FO
+  36   36 3451 3552 FO
+  36   36 1180 4464 FO
+  36   36 1785 4272 FO
+  36   36 3787 4147 FO
+  36   36 1194 4508 FO
+  36   36 1645 4458 FO
+  36   36 4156 3387 FO
+  36   36  946 4599 FO
+  36   36 2769 4149 FO
+  36   36 1056 4574 FO
+  36   36 4145 3220 FO
+  36   36 2064 4369 FO
+  36   36 1653 4185 FO
+  36   36 1288 4478 FO
+  36   36 1386 4391 FO
+  36   36 1134 4548 FO
+  36   36 1952 4153 FO
+  36   36 2913 3883 FO
+  36   36 1207 4477 FO
+  36   36 6255 3460 FO
+  36   36 1239 4491 FO
+  36   36 2132 4334 FO
+gs 899 3220 5357 1395 MR c np
+gr
+gr
+
+c8
+c0
+3065 4902 mt 
+(Heavy abundances) s
+ 616 4390 mt  -90 rotate
+(Light abundances) s
+90 rotate
+gs 899 3220 5357 1395 MR c np
+c9
+251 -83 785 -263 785 -263 785 -262 785 -263 779 -261 905 4615 7 MP stroke
+gr
+
+c9
+c0
+3292 2711 mt 
+(Ratio: 2l1h) s
+3293 2849 mt 
+(3DSpectra) s
+3089 2987 mt 
+(Common peptides) s
+2774 3125 mt 
+(Not statistically different at 5%) s
+ 882 4657 mt 
+( ) s
+6239 3262 mt 
+( ) s
+c1
+0 334 4243 0 0 -334 1952 3614 4 MP
+PP
+-4243 0 0 334 4243 0 0 -334 1952 3614 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+1952 3280 mt 6195 3280 L
+1952 3614 mt 6195 3614 L
+6195 3614 mt 6195 3280 L
+1952 3614 mt 1952 3280 L
+1952 3614 mt 6195 3614 L
+1952 3614 mt 1952 3280 L
+1952 3280 mt 6195 3280 L
+1952 3614 mt 6195 3614 L
+6195 3614 mt 6195 3280 L
+1952 3614 mt 1952 3280 L
+2426 3415 mt 
+(Quantifications #=32 R2xy=0.79 pValue=4.6835e-012) s
+gs 1952 3280 4244 335 MR c np
+gs 2133 3299 147 147 MR c np
+c8
+  36   36 2206 3372 FO
+gr
+
+c8
+gr
+
+c8
+c0
+2426 3564 mt 
+(Regression line: m=1.88 q=-0.00 SE\(m\)=0.15 SE\(q\)=0.01 RMSE=\
+0.11) s
+gs 1952 3280 4244 335 MR c np
+c9
+365 0 2024 3521 2 MP stroke
+gr
+
+c9
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Page: 6 6
+%%BeginPageSetup
+%%PageBoundingBox:    57   199   545   594
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode 0204 7344 csm
+
+  480   208  5865  4746 MR c np
+85 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 1.000000 sc} bdef
+/c1 { 0.000000 0.000000 0.000000 0.000000 sc} bdef
+/c2 { 0.000000 0.900000 0.900000 0.100000 sc} bdef
+/c3 { 0.820000 0.000000 0.820000 0.180000 sc} bdef
+/c4 { 0.800000 0.800000 0.000000 0.200000 sc} bdef
+/c5 { 0.000000 0.090000 0.590000 0.090000 sc} bdef
+/c6 { 0.000000 0.740000 0.180000 0.000000 sc} bdef
+/c7 { 0.820000 0.000000 0.000000 0.180000 sc} bdef
+c0
+1 j
+c1
+   0    0 6913 5185 PR
+6 w
+0 1394 5356 0 0 -1394 899 2157 4 MP
+PP
+-5356 0 0 1394 5356 0 0 -1394 899 2157 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+ 899 2157 mt 6255 2157 L
+ 899 2157 mt  899  763 L
+ 899 2157 mt  899 2103 L
+%%IncludeResource: font Helvetica
+/Helvetica 120 FMS
+
+ 866 2302 mt 
+(0) s
+1936 2157 mt 1936 2103 L
+1820 2302 mt 
+(0.05) s
+2973 2157 mt 2973 2103 L
+2890 2302 mt 
+(0.1) s
+4010 2157 mt 4010 2103 L
+3894 2302 mt 
+(0.15) s
+5047 2157 mt 5047 2103 L
+4964 2302 mt 
+(0.2) s
+6084 2157 mt 6084 2103 L
+5968 2302 mt 
+(0.25) s
+ 899 2157 mt  952 2157 L
+ 798 2201 mt 
+(0) s
+ 899 1878 mt  952 1878 L
+ 698 1922 mt 
+(0.2) s
+ 899 1599 mt  952 1599 L
+ 698 1643 mt 
+(0.4) s
+ 899 1320 mt  952 1320 L
+ 698 1364 mt 
+(0.6) s
+ 899 1041 mt  952 1041 L
+ 698 1085 mt 
+(0.8) s
+ 899  763 mt  952  763 L
+ 798  807 mt 
+(1) s
+3292  392 mt 
+(Ratio: 5l1h) s
+2936  530 mt 
+(Maspectras: ASAPRatio) s
+3089  668 mt 
+(Common peptides) s
+gs 899 763 5357 1395 MR c np
+gr
+
+gs 1036 690 5293 1477 MR c np
+/c8 { 1.000000 1.000000 0.000000 0.000000 sc} bdef
+c8
+  36   36 5499  942 FO
+  36   36 5660  869 FO
+  36   36 6255  763 FO
+  36   36 3180 1333 FO
+  36   36 3035 1364 FO
+  36   36 1404 1956 FO
+  36   36 1463 1940 FO
+  36   36 1484 1944 FO
+  36   36 2350 1859 FO
+  36   36 2382 1837 FO
+  36   36 1282 2063 FO
+  36   36 3134 1636 FO
+  36   36 2958 1731 FO
+  36   36 1109 2074 FO
+  36   36 1655 1873 FO
+  36   36 1607 1857 FO
+  36   36 4134 1598 FO
+  36   36 3284 1666 FO
+  36   36 1853 1860 FO
+  36   36 1945 1879 FO
+  36   36 1854 1891 FO
+  36   36 5062  936 FO
+  36   36 1699 1910 FO
+  36   36 1711 1877 FO
+  36   36 2157 1884 FO
+  36   36 3433 1597 FO
+  36   36 3633 1508 FO
+  36   36 2929 1294 FO
+  36   36 3070 1273 FO
+  36   36 1165 2093 FO
+  36   36 1662 1999 FO
+  36   36 1691 1991 FO
+  36   36 1662 2002 FO
+gr
+
+c8
+gs 899 763 5357 1395 MR c np
+gr
+
+c0
+3065 2445 mt 
+(Heavy abundances) s
+ 616 1933 mt  -90 rotate
+(Light abundances) s
+90 rotate
+gs 899 763 5357 1395 MR c np
+/c9 { 0.000000 1.000000 1.000000 0.000000 sc} bdef
+c9
+2074 -594 2071 -593 902 2158 3 MP stroke
+gr
+
+c9
+c0
+ 882 2200 mt 
+( ) s
+6239  805 mt 
+( ) s
+c1
+0 334 4243 0 0 -334 1952 1157 4 MP
+PP
+-4243 0 0 334 4243 0 0 -334 1952 1157 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+1952  823 mt 6195  823 L
+1952 1157 mt 6195 1157 L
+6195 1157 mt 6195  823 L
+1952 1157 mt 1952  823 L
+1952 1157 mt 6195 1157 L
+1952 1157 mt 1952  823 L
+1952  823 mt 6195  823 L
+1952 1157 mt 6195 1157 L
+6195 1157 mt 6195  823 L
+1952 1157 mt 1952  823 L
+2426  958 mt 
+(Quantifications #=33 R2xy=0.89 pValue=1.4868e-016) s
+gs 1952 823 4244 335 MR c np
+gs 2133 842 147 147 MR c np
+c8
+  36   36 2206  915 FO
+gr
+
+c8
+gr
+
+c8
+c0
+2426 1107 mt 
+(Regression line: m=4.26 q=-0.00 SE\(m\)=0.28 SE\(q\)=0.02 RMSE=\
+0.07) s
+gs 1952 823 4244 335 MR c np
+c9
+365 0 2024 1064 2 MP stroke
+gr
+
+c9
+c1
+0 1394 5356 0 0 -1394 899 4614 4 MP
+PP
+-5356 0 0 1394 5356 0 0 -1394 899 4614 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+ 899 4614 mt 6255 4614 L
+ 899 4614 mt  899 3220 L
+ 899 4614 mt  899 4560 L
+ 866 4759 mt 
+(0) s
+2048 4614 mt 2048 4560 L
+1932 4759 mt 
+(0.05) s
+3197 4614 mt 3197 4560 L
+3114 4759 mt 
+(0.1) s
+4346 4614 mt 4346 4560 L
+4230 4759 mt 
+(0.15) s
+5495 4614 mt 5495 4560 L
+5412 4759 mt 
+(0.2) s
+ 899 4614 mt  952 4614 L
+ 798 4658 mt 
+(0) s
+ 899 4335 mt  952 4335 L
+ 698 4379 mt 
+(0.2) s
+ 899 4056 mt  952 4056 L
+ 698 4100 mt 
+(0.4) s
+ 899 3777 mt  952 3777 L
+ 698 3821 mt 
+(0.6) s
+ 899 3498 mt  952 3498 L
+ 698 3542 mt 
+(0.8) s
+ 899 3220 mt  952 3220 L
+ 798 3264 mt 
+(1) s
+gs 899 3220 5357 1395 MR c np
+gr
+
+gs 999 3147 5330 1503 MR c np
+c8
+  36   36 1524 4499 FO
+  36   36 1326 4433 FO
+  36   36 2152 4354 FO
+  36   36 1179 4545 FO
+  36   36 1072 4565 FO
+  36   36 1973 4443 FO
+  36   36 1415 4382 FO
+  36   36 1189 4523 FO
+  36   36 1245 4557 FO
+  36   36 3651 4060 FO
+  36   36 3828 3773 FO
+  36   36 1660 4476 FO
+  36   36 6152 3307 FO
+  36   36 2523 4099 FO
+  36   36 1113 4528 FO
+  36   36 1302 4477 FO
+  36   36 1651 4349 FO
+  36   36 2543 4306 FO
+  36   36 1581 4365 FO
+  36   36 2619 4177 FO
+  36   36 1547 4408 FO
+  36   36 4001 3986 FO
+  36   36 3679 3772 FO
+  36   36 1668 4465 FO
+  36   36 6255 3220 FO
+  36   36 2610 4060 FO
+  36   36 1103 4531 FO
+  36   36 2246 4345 FO
+  36   36 1202 4521 FO
+  36   36 1120 4560 FO
+  36   36 1471 4381 FO
+  36   36 1119 4576 FO
+  36   36 1614 4480 FO
+gr
+
+c8
+gs 899 3220 5357 1395 MR c np
+gr
+
+c0
+3065 4902 mt 
+(Heavy abundances) s
+ 616 4390 mt  -90 rotate
+(Light abundances) s
+90 rotate
+gs 899 3220 5357 1395 MR c np
+c9
+2298 -606 2298 -606 899 4610 3 MP stroke
+gr
+
+c9
+c0
+3292 2711 mt 
+(Ratio: 5l1h) s
+3293 2849 mt 
+(3DSpectra) s
+3089 2987 mt 
+(Common peptides) s
+2774 3125 mt 
+(Not statistically different at 5%) s
+ 882 4657 mt 
+( ) s
+6239 3262 mt 
+( ) s
+c1
+0 334 4204 0 0 -334 1992 3614 4 MP
+PP
+-4204 0 0 334 4204 0 0 -334 1992 3614 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+1992 3280 mt 6196 3280 L
+1992 3614 mt 6196 3614 L
+6196 3614 mt 6196 3280 L
+1992 3614 mt 1992 3280 L
+1992 3614 mt 6196 3614 L
+1992 3614 mt 1992 3280 L
+1992 3280 mt 6196 3280 L
+1992 3614 mt 6196 3614 L
+6196 3614 mt 6196 3280 L
+1992 3614 mt 1992 3280 L
+2465 3415 mt 
+(Quantifications #=33 R2xy=0.95 pValue=2.5583e-022) s
+gs 1992 3280 4205 335 MR c np
+gs 2173 3299 147 147 MR c np
+c8
+  36   36 2246 3372 FO
+gr
+
+c8
+gr
+
+c8
+c0
+2465 3564 mt 
+(Regression line: m=4.35 q=0.00 SE\(m\)=0.25 SE\(q\)=0.01 RMSE=0\
+.05) s
+gs 1992 3280 4205 335 MR c np
+c9
+364 0 2064 3521 2 MP stroke
+gr
+
+c9
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Page: 7 7
+%%BeginPageSetup
+%%PageBoundingBox:    57   199   551   594
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode 0204 7344 csm
+
+  480   208  5935  4746 MR c np
+85 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 1.000000 sc} bdef
+/c1 { 0.000000 0.000000 0.000000 0.000000 sc} bdef
+/c2 { 0.000000 0.900000 0.900000 0.100000 sc} bdef
+/c3 { 0.820000 0.000000 0.820000 0.180000 sc} bdef
+/c4 { 0.800000 0.800000 0.000000 0.200000 sc} bdef
+/c5 { 0.000000 0.090000 0.590000 0.090000 sc} bdef
+/c6 { 0.000000 0.740000 0.180000 0.000000 sc} bdef
+/c7 { 0.820000 0.000000 0.000000 0.180000 sc} bdef
+c0
+1 j
+c1
+   0    0 6913 5185 PR
+6 w
+0 1394 5356 0 0 -1394 899 2157 4 MP
+PP
+-5356 0 0 1394 5356 0 0 -1394 899 2157 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+ 899 2157 mt 6255 2157 L
+ 899 2157 mt  899  763 L
+ 899 2157 mt  899 2103 L
+%%IncludeResource: font Helvetica
+/Helvetica 120 FMS
+
+ 866 2302 mt 
+(0) s
+1704 2157 mt 1704 2103 L
+1588 2302 mt 
+(0.02) s
+2509 2157 mt 2509 2103 L
+2393 2302 mt 
+(0.04) s
+3314 2157 mt 3314 2103 L
+3198 2302 mt 
+(0.06) s
+4119 2157 mt 4119 2103 L
+4003 2302 mt 
+(0.08) s
+4925 2157 mt 4925 2103 L
+4842 2302 mt 
+(0.1) s
+5730 2157 mt 5730 2103 L
+5614 2302 mt 
+(0.12) s
+ 899 2157 mt  952 2157 L
+ 798 2201 mt 
+(0) s
+ 899 1878 mt  952 1878 L
+ 698 1922 mt 
+(0.2) s
+ 899 1599 mt  952 1599 L
+ 698 1643 mt 
+(0.4) s
+ 899 1320 mt  952 1320 L
+ 698 1364 mt 
+(0.6) s
+ 899 1041 mt  952 1041 L
+ 698 1085 mt 
+(0.8) s
+ 899  763 mt  952  763 L
+ 798  807 mt 
+(1) s
+3259  392 mt 
+(Ratio: 10l1h) s
+2936  530 mt 
+(Maspectras: ASAPRatio) s
+3089  668 mt 
+(Common peptides) s
+gs 899 763 5357 1395 MR c np
+gr
+
+gs 1137 690 5192 1461 MR c np
+/c8 { 1.000000 1.000000 0.000000 0.000000 sc} bdef
+c8
+  36   36 5172  881 FO
+  36   36 6255  763 FO
+  36   36 6209  774 FO
+  36   36 1665 1896 FO
+  36   36 1354 2068 FO
+  36   36 2601 1666 FO
+  36   36 2846 1715 FO
+  36   36 1210 2020 FO
+  36   36 1277 2000 FO
+  36   36 1602 1869 FO
+  36   36 1949 1636 FO
+  36   36 1501 1865 FO
+  36   36 1431 1874 FO
+  36   36 5231  903 FO
+  36   36 2551 1879 FO
+  36   36 1479 2077 FO
+  36   36 3800 1511 FO
+  36   36 3719 1522 FO
+  36   36 3125 1172 FO
+  36   36 3814  867 FO
+  36   36 1696 1985 FO
+  36   36 1710 1975 FO
+  36   36 1769 1955 FO
+gr
+
+c8
+gs 899 763 5357 1395 MR c np
+gr
+
+c0
+3065 2445 mt 
+(Heavy abundances) s
+ 616 1933 mt  -90 rotate
+(Light abundances) s
+90 rotate
+gs 899 763 5357 1395 MR c np
+/c9 { 0.000000 1.000000 1.000000 0.000000 sc} bdef
+c9
+4004 -1279 921 2158 2 MP stroke
+gr
+
+c9
+c0
+ 882 2200 mt 
+( ) s
+6239  805 mt 
+( ) s
+c1
+0 334 4243 0 0 -334 1952 1157 4 MP
+PP
+-4243 0 0 334 4243 0 0 -334 1952 1157 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+1952  823 mt 6195  823 L
+1952 1157 mt 6195 1157 L
+6195 1157 mt 6195  823 L
+1952 1157 mt 1952  823 L
+1952 1157 mt 6195 1157 L
+1952 1157 mt 1952  823 L
+1952  823 mt 6195  823 L
+1952 1157 mt 6195 1157 L
+6195 1157 mt 6195  823 L
+1952 1157 mt 1952  823 L
+2426  958 mt 
+(Quantifications #=23 R2xy=0.88 pValue=2.2446e-011) s
+gs 1952 823 4244 335 MR c np
+gs 2133 842 147 147 MR c np
+c8
+  36   36 2206  915 FO
+gr
+
+c8
+gr
+
+c8
+c0
+2426 1107 mt 
+(Regression line: m=9.23 q=-0.01 SE\(m\)=0.87 SE\(q\)=0.03 RMSE=\
+0.06) s
+gs 1952 823 4244 335 MR c np
+c9
+365 0 2024 1064 2 MP stroke
+gr
+
+c9
+c1
+0 1394 5356 0 0 -1394 899 4614 4 MP
+PP
+-5356 0 0 1394 5356 0 0 -1394 899 4614 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+ 899 4614 mt 6255 4614 L
+ 899 4614 mt  899 3220 L
+ 899 4614 mt  899 4560 L
+ 866 4759 mt 
+(0) s
+1790 4614 mt 1790 4560 L
+1674 4759 mt 
+(0.02) s
+2682 4614 mt 2682 4560 L
+2566 4759 mt 
+(0.04) s
+3574 4614 mt 3574 4560 L
+3458 4759 mt 
+(0.06) s
+4465 4614 mt 4465 4560 L
+4349 4759 mt 
+(0.08) s
+5357 4614 mt 5357 4560 L
+5274 4759 mt 
+(0.1) s
+6249 4614 mt 6249 4560 L
+6133 4759 mt 
+(0.12) s
+ 899 4614 mt  952 4614 L
+ 798 4658 mt 
+(0) s
+ 899 4335 mt  952 4335 L
+ 698 4379 mt 
+(0.2) s
+ 899 4056 mt  952 4056 L
+ 698 4100 mt 
+(0.4) s
+ 899 3777 mt  952 3777 L
+ 698 3821 mt 
+(0.6) s
+ 899 3498 mt  952 3498 L
+ 698 3542 mt 
+(0.8) s
+ 899 3220 mt  952 3220 L
+ 798 3264 mt 
+(1) s
+gs 899 3220 5357 1395 MR c np
+gr
+
+gs 923 3147 5406 1530 MR c np
+c8
+  36   36 5886 3315 FO
+  36   36 1190 4545 FO
+  36   36 1612 4358 FO
+  36   36 1436 4377 FO
+  36   36 3855 3725 FO
+  36   36 1655 4479 FO
+  36   36 6255 3220 FO
+  36   36 1920 4465 FO
+  36   36 1230 4527 FO
+  36   36 1474 4388 FO
+  36   36 2064 4411 FO
+  36   36 1595 4481 FO
+  36   36 4713 3469 FO
+  36   36 1743 4471 FO
+  36   36 5595 3331 FO
+  36   36 1457 4399 FO
+  36   36 1222 4548 FO
+  36   36 1296 4483 FO
+  36   36 1393 4392 FO
+  36   36 3147 3929 FO
+  36   36  996 4603 FO
+  36   36 3792 4020 FO
+  36   36 1752 4458 FO
+gr
+
+c8
+gs 899 3220 5357 1395 MR c np
+gr
+
+c0
+3065 4902 mt 
+(Heavy abundances) s
+ 616 4390 mt  -90 rotate
+(Light abundances) s
+90 rotate
+gs 899 3220 5357 1395 MR c np
+c9
+4419 -1255 938 4615 2 MP stroke
+gr
+
+c9
+c0
+3259 2711 mt 
+(Ratio: 10l1h) s
+3293 2849 mt 
+(3DSpectra) s
+3089 2987 mt 
+(Common peptides) s
+2874 3125 mt 
+(Statistically different at 5%) s
+ 882 4657 mt 
+( ) s
+6239 3262 mt 
+( ) s
+c1
+0 334 4243 0 0 -334 1952 3614 4 MP
+PP
+-4243 0 0 334 4243 0 0 -334 1952 3614 5 MP stroke
+4 w
+DO
+SO
+6 w
+c0
+1952 3280 mt 6195 3280 L
+1952 3614 mt 6195 3614 L
+6195 3614 mt 6195 3280 L
+1952 3614 mt 1952 3280 L
+1952 3614 mt 6195 3614 L
+1952 3614 mt 1952 3280 L
+1952 3280 mt 6195 3280 L
+1952 3614 mt 6195 3614 L
+6195 3614 mt 6195 3280 L
+1952 3614 mt 1952 3280 L
+2426 3415 mt 
+(Quantifications #=23 R2xy=0.97 pValue=1.8503e-017) s
+gs 1952 3280 4244 335 MR c np
+gs 2133 3299 147 147 MR c np
+c8
+  36   36 2206 3372 FO
+gr
+
+c8
+gr
+
+c8
+c0
+2426 3564 mt 
+(Regression line: m=9.08 q=-0.01 SE\(m\)=0.55 SE\(q\)=0.01 RMSE=\
+0.04) s
+gs 1952 3280 4244 335 MR c np
+c9
+365 0 2024 3521 2 MP stroke
+gr
+
+c9
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%BoundingBox:    51   199   551   594
+%%Pages: 007
+%%EOF
